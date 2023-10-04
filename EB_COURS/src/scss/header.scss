@@ -21,6 +21,7 @@
     align-items: center;
     width: 130px;
     margin-top: 4px;
+    text-align: center;
     .logo-one{
         color: #4D2900;
         font-family: "Montserrat";
@@ -58,8 +59,39 @@
     }
 
 }
+.find:after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #00000096;
+}
+
 .find-wrap{
     width: 200px;
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    .find-logo{
+        width: 14px;
+        height: 14px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+            input{
+                border: inherit;
+                height: 26px;
+                font-size: 14px;
+                padding: 4px;
+                background: #FFFAF5;
+                font-family: "Montserrat";
+                &:focus {
+                    outline: none;
+                    font-family: "Montserrat";
+                }
+            }
+    }

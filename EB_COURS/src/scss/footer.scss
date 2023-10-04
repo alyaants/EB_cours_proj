@@ -13,6 +13,13 @@
 }
 .footer .logo-one{
     color: #FFF;
+    &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.59);
+      }
 }
 .footer .logo-two{
     color: #FFF;
