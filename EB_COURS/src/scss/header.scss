@@ -1,0 +1,65 @@
+.header{
+    width: 100%;
+    top: 0;
+    left: 0;
+ 
+}
+.header-wrap{
+    padding: 39px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-main{
+    display: flex;
+    width: 177px;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+.logo-text{
+    display: block;
+    align-items: center;
+    width: 130px;
+    margin-top: 4px;
+    .logo-one{
+        color: #4D2900;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 100%;
+            background: #00000096;
+          }
+    }
+    .logo-two{
+        text-transform: lowercase;
+        color: #241400;
+    /* Текст в параграфах */
+        font-family: "Montserrat";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        // line-height: 196.187%; /* 25.504px */
+    }
+}
+.navigation {
+    ul{
+        display: flex;
+    width: 375px;
+    justify-content: space-between;}
+    a{
+          color: #241400;
+    }
+
+}
+.find-wrap{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}

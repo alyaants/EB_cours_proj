@@ -1,0 +1,27 @@
+@import url(./fonts.scss);
+@import url(./header.scss);
+@import url(./promo.scss);
+@import url(./new.scss);
+@import url(./sale.scss);
+@import url(./catalog.scss);
+@import url(./deliver.scss);
+@import url(./social.scss);
+@import url(./footer.scss);
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Montserrat", sans-serif, serif;
+    background: #FFFAF5;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}

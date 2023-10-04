@@ -1,0 +1,45 @@
+.promo-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px 0 0; */
+    height: 100vh;   
+}
+.promo-left{
+    width: 467px;
+    h1{
+        color: #241400;
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 196.187%; /* 70.627px */
+    }
+    p{
+        color: #241400;
+    /* Текст в параграфах */
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 196.187%; /* 25.504px */
+    }
+}
+
+.button{
+    width: 212px;
+    padding: 11px 24px;
+    background: #E16A00;
+    margin-top: 16px;
+    a{
+        color: #FFF;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 196.187%; /* 29.428px */
+    }
+}
+.promo-right{
+    width: 650px;
+}

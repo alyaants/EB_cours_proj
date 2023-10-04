@@ -1,0 +1,45 @@
+.catalog-wrap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+    h2{
+        margin-bottom: 50px;
+        color: #000;
+    /* Заголовок h2 */
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 196.187%; /* 49.047px */
+    }
+}
+.catalog-sec{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 798px;
+
+        li{
+            margin-bottom: 36px;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.25);
+            width: 242px;
+            height: 76px;
+            text-align: center;
+            padding: 25px 0;
+
+            a{
+                display: block;
+                color: #241400;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 196.187%; /* 27.466px */
+            }
+        }
+    }
+}

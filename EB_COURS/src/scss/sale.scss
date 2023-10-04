@@ -1,0 +1,104 @@
+.sale{
+    h3{
+        color: #241400;
+/* Заголовок h2 */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 196.187%; /* 49.047px */
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    .container{
+        padding: 141px 0;
+
+        .swiper-button-prev{
+            color: #4D2900;
+            top: var(--swiper-navigation-top-offset,160%);
+            left: var(--swiper-navigation-sides-offset,290px);
+        }
+        .swiper-button-next{
+            top: var(--swiper-navigation-top-offset,160%);
+            color: #4D2900;
+            right: var(--swiper-navigation-sides-offset,290px);
+        }
+        .swiper-pagination-bullet{
+            width: 95px;
+            height: 10px;
+            border-radius: 0;
+        }
+        .swiper-pagination-bullet-active{
+               background-color: #4D2900;          
+        }
+    }
+}
+
+.card{
+    width: 184px;
+    background: #FFF;
+    padding: 25px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    .old{
+        color: #D70000;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        // line-height: 196.187%; /* 29.428px */
+        text-decoration: line-through;
+        text-align: right;
+    }
+    span{
+        color:#241400;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 196.187%; /* 35.314px */
+    }
+    h4{
+        color: #241400;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 196.187%; /* 23.542px */
+        width: 141px;
+    }
+    p{
+        color: #241400;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 196.187%; /* 23.542px */
+        width: 136px;
+    }
+    button{
+        border-radius: 3px;
+        background:  #E16A00;
+        box-shadow: 0px 3px 8px 0px rgba(225, 106, 0, 0.19);
+        color: #FFF;
+        border: inherit;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 196.187%; /* 23.542px */
+        text-transform: uppercase;
+        width: 103px;
+        height: 29px;
+        margin-top: 18px;
+        }
+
+}
+
+.slider-wrap{
+    padding: 0 0 58px;
+}
+.card-img{
+    width: 134px;
+    height: 190px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
