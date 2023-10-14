@@ -16,15 +16,28 @@
     align-items: start;
     flex-direction: row;
     padding: 0 0 100px;
-        .catalog-filter-wrap{
+    .catalog-filter-wrap{
     ul{
-        width: 150px;
+        width: 170px;
         text-align: left;
+        background-color: #FFF;
+        border-radius: 5px;
+        padding: 10px;
         li{
-            margin-bottom: 5px;
-        }
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            cursor: pointer; 
+          }
+        li.active {
+            color: #FFF;
+            // display: block;
+            background-color: #391f00c7; /* Измените цвет фонана коричневый или выберите нужный вам цвет */ 
+        } 
     }  
-        }}
+        }
+    }
 .catalog-catalog-wrap{
     padding: 0 34px;
     display: grid;
