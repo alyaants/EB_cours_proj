@@ -1,0 +1,29 @@
+
+
+.o-nas{
+    h2{
+    font-size: 28px;
+}}
+.inf{
+    padding: 20px 0 80px;
+
+    p{
+        font-size: 18px;
+        margin-bottom: 20px;
+        width: 980px;
+    }
+    .about{
+        font-size: 18px;
+        margin-bottom: 20px;
+        .main-ul{
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            .main-li__item{
+                font-size: 16px;
+                font-weight: normal;
+            }
+        }
+    }
+}

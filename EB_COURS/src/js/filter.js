@@ -1,19 +1,15 @@
 const list = document.querySelector(".list");
 const items = document.querySelectorAll(".catalog-catalog__item");
-
+const  listItems = document.querySelectorAll('.list__item')
 function filter() {
   list.addEventListener('click', (event) => {
     const targetId = event.target.dataset.id;
-
-
-
- items.forEach(item => {
-      item.classList.remove('active');
-      item.style.backgroundColor = ''; // Сбрасываем фон
-    });
+    const target = event.target;
     
-    event.target.classList.add('active');
-
+    if(target.classList.contains('list__item')){
+      listItems.forEach(listItem => listItem.classList.remove('active'));
+    target.classList.add('active');
+    }
 
 
     switch (targetId) {
