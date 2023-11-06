@@ -11,6 +11,8 @@
 @import url(./catalog-main.scss);
 @import url(./dostavka.scss);
 @import url(./o_nas.scss);
+
+@import url(./cart.scss);
 *{
     padding: 0;
     margin: 0;
@@ -29,3 +31,15 @@ html{
     margin: auto;
     padding: 0 15px;
 }
+
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.482);
+    z-index: 1;
+  }
+  
