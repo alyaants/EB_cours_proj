@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
+    <link type="Image/x-icon" href="./img/books-stack-of-three 2_1.svg" rel="icon">
     <link rel="stylesheet" href="./scss/index.scss">
     <title>Библиотечная - книжный магазин</title>
 </head>
@@ -26,7 +25,6 @@
                         <li><a href="./html/catalog.html">Каталог</a></li>
                         <li><a href="./html/dostavka.html">Доставка</a></li>
                         <li><a href="./html/o_nas.html">О магазине</a></li>
-                        <li><a href="#">Блог</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +39,7 @@
                 </div>
             </div>
             <div class="cart">
-                    <a href="#"><img src="./img/cil_cart.svg" alt=""></a>
+                    <button class="cart" id="cart"><img src="./img/cil_cart.svg" alt=""></button>
             </div>
         </div>
        </div> 
@@ -388,12 +386,8 @@
                     <button>В корзину</button>
                   </div>
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
                 <div class="swiper-paginationn"></div>
               </div>
-              <!-- <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div> -->
             </div>
             
     </section>
@@ -484,7 +478,7 @@
                             </nav>
                         </div>
                         <div class="foofer-call">
-                            <p>+38 (071) 339-16-26</p>
+                            <p>+375 (29) 339-16-26</p>
                             <div class="footer-btn"><a href="#">Заказать звонок</a></div>
                         </div>
                     </div>
@@ -495,6 +489,7 @@
         </div>
     </footer>
     <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 </html>
