@@ -47,7 +47,6 @@ function filterItems(className) {
 
 filter();
 
-
 // поиск по товарам
 const inputSearch = document.querySelector(".search");
 inputSearch.addEventListener("input", search);
@@ -57,7 +56,9 @@ function search() {
   const products = document.querySelectorAll(".catalog-catalog__item");
 
   products.forEach((product) => {
-    const searchTitle = product.querySelector(".prodTitle").textContent.toLowerCase();
+    const searchTitle = product
+      .querySelector(".prodTitle")
+      .textContent.toLowerCase();
     const searchFirm = product.querySelector(".firm").textContent.toLowerCase();
 
     if (searchTitle.includes(input) || searchFirm.includes(input)) {

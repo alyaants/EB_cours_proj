@@ -1,55 +1,51 @@
-.new{
-    .container{
-        .swiper-button-prev{
-            color: #4D2900;
-            top: var(--swiper-navigation-top-offset,160%);
-            left: var(--swiper-navigation-sides-offset,290px);
-        }
-        .swiper-button-next{
-            top: var(--swiper-navigation-top-offset,160%);
-            color: #4D2900;
-            right: var(--swiper-navigation-sides-offset,290px);
-        }
-        .swiper-pagination-bullet{
-            width: 95px;
-            height: 10px;
-            border-radius: 0;
-        }
-        .swiper-pagination-bullet-active{
-               background-color: #4D2900;          
-        }
+.new {
+  .container {
+    .swiper-button-prev {
+      color: #4d2900;
+      top: var(--swiper-navigation-top-offset, 160%);
+      left: var(--swiper-navigation-sides-offset, 290px);
     }
+    .swiper-button-next {
+      top: var(--swiper-navigation-top-offset, 160%);
+      color: #4d2900;
+      right: var(--swiper-navigation-sides-offset, 290px);
+    }
+    .swiper-pagination-bullet {
+      width: 95px;
+      height: 10px;
+      border-radius: 0;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #4d2900;
+    }
+  }
 }
 
-
-
-.new-wrap{
+.new-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  h2 {
+    color: #241400;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 196.187%;
+    width: 306px;
+  }
+  ul {
+    width: 641px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
-    h2{
-        color: #241400;
-/* Заголовок h2 */
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 196.187%; /* 49.047px */
-        width: 306px;
+    a {
+      color: #241400;
+      font-family: "Montserrat";
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 196.187%;
     }
-    ul{
-        width: 641px;
-        display: flex;
-        justify-content: space-between;
-        a{
-            color: #241400;
-/* Текст в параграфах */
-        font-family: Montserrat;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 196.187%; /* 25.504px */
-        }
-    }
+  }
 }

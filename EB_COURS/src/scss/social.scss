@@ -1,52 +1,46 @@
-.social-wrap{
-    padding: 59px 0;
-    display: flex;
-    flex-direction: column;
+.social-wrap {
+  padding: 59px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  h3 {
+    color: #241400;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 196.187%;
+    margin-bottom: 31px;
     text-align: center;
-    align-items: center; 
-    h3{
-        color: #241400;
-    /* Заголовок h2 */
-        font-family: "Montserrat";
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 196.187%; /* 49.047px */
-        margin-bottom: 31px;
-        text-align: center;
-    }
+  }
 }
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 280px;
+  align-items: center;
 
-.social-icon{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 280px;
-    align-items: center;
-    
-    .icons{
-        font-size: 42px;
-        color: #241400;
-        transition: 0.4s;
-        font-size: 42px;
-        
-    }
-    .fa-facebook:hover{
-            color: rgb(0, 82, 176);
-    }
-    .fa-twitter:hover{
-        color: rgb(0, 166, 255);
-    }
-    .fa-vk:hover{
-        color: rgb(52, 42, 247);
-    }
-    .fa-instagram:hover{
-        color: rgb(198, 9, 198);
-    }
-    .fa-youtube:hover{
-        color: rgb(255, 0, 0);
-    }
-
+  .icons {
+    font-size: 42px;
+    color: #241400;
+    transition: 0.4s;
+    font-size: 42px;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 82, 176);
+  }
+  .fa-twitter:hover {
+    color: rgb(0, 166, 255);
+  }
+  .fa-vk:hover {
+    color: rgb(52, 42, 247);
+  }
+  .fa-instagram:hover {
+    color: rgb(198, 9, 198);
+  }
+  .fa-youtube:hover {
+    color: rgb(255, 0, 0);
+  }
 }
-
-
