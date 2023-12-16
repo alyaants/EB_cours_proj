@@ -1,642 +1,1118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width. initial-scale=1.0">
-    <link type="Image/x-icon" href="../img/books-stack-of-three 2_1.svg" rel="icon">
-    <link rel="stylesheet" href="../scss/index.scss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width. initial-scale=1.0" />
+    <link
+      type="Image/x-icon"
+      href="../img/books-stack-of-three 2_1.svg"
+      rel="icon"
+    />
+    <link rel="stylesheet" href="../scss/index.scss" />
     <title>Библиотечная - книжный магазин</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-       <div class="container">
+      <div class="container">
         <div class="header-wrap">
-            <div class="logo-main">
-                <div class="logo"><a href="../index.html"><img src="../img/books-stack-of-three 2.svg" alt="#"></a></div>
-                <div class="logo-text">
-                    <a href="../index.html"><span class="logo-one">Библиотечная</span></a>
-                    <a href="../index.html"><span class="logo-two">Книжный магазин</span></a>
-                </div>
+          <div class="logo-main">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../img/books-stack-of-three 2.svg" alt="#"
+              /></a>
             </div>
-            <div class="navigation">
-                <nav>
-                    <ul>
-                        <li><a href="./catalog.html">Каталог</a></li>
-                        <li><a href="./dostavka.html">Доставка</a></li>
-                        <li><a href="./o_nas.html">О магазине</a></li>
-                    </ul>
-                </nav>
+            <div class="logo-text">
+              <a href="../index.html"
+                ><span class="logo-one">Библиотечная</span></a
+              >
+              <a href="../index.html"
+                ><span class="logo-two">Книжный магазин</span></a
+              >
             </div>
-            <div class="find">
-                <div class="find-wrap">
-                    <div class="find-logo">
-                        <img src="../img/simple-line-icons_magnifier.svg" alt="#">
-                    </div>
-                    <form> 
-                        <input type="search" name="text" class="search" placeholder="Поиск">
-                    </form>
-                </div>
+          </div>
+          <div class="navigation">
+            <nav>
+              <ul>
+                <li><a href="./catalog.html">Каталог</a></li>
+                <li><a href="./dostavka.html">Доставка</a></li>
+                <li><a href="./o_nas.html">О магазине</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="find">
+            <div class="find-wrap">
+              <div class="find-logo">
+                <img src="../img/simple-line-icons_magnifier.svg" alt="#" />
+              </div>
+              <form>
+                <input
+                  type="search"
+                  name="text"
+                  class="search"
+                  placeholder="Поиск"
+                />
+              </form>
             </div>
-            <div class="cart">
-                <button class="cart" id="cart"><img src="../img/cil_cart.svg" alt=""></button>
+          </div>
+          <div class="cart">
+            <button class="cart" id="cart">
+              <img src="../img/cil_cart.svg" alt="" />
+            </button>
+          </div>
         </div>
-        </div>
-       </div> 
+      </div>
     </header>
 
     <section class="catalog-main">
-        <div class="container">
-            <h3>Каталог</h3>
-            <div class="catalog-main-wrap">
-                <div class="catalog-filter">
-                    <div class="catalog-filter-wrap">
-                        <ul class="list">
-                            <li class="list__item active" data-id="all" active>Все товары</li>
-                            <li class="list__item" data-id="fiction">Художественная литература</li>
-                            <li class="list__item" data-id="non-fiction">Нехудожественная литература</li>
-                            <li class="list__item" data-id="child">Детские книги</li>
-                            <li class="list__item" data-id="business">Бизнес-литература</li>
-                            <li class="list__item" data-id="images">Картины по номерам</li>
-                            <li class="list__item" data-id="games">Настольные игры</li>
-                            <li class="list__item" data-id="stationery">Канцелярские принадлежности</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="catalog-catalog">
-                    <div class="catalog-catalog-wrap">
-                        <div class="catalog-catalog__item images">
-                            <a href="#"><div class="catalog-catalog-img">
-                                <img src="../img/catalog/images/gora.jpg" alt="#">
-                            </div>
-                            <span>31.37 BYN</span>
-                            <h4 class="prodTitle">Картина по номерам "Вид на Юпитер"</h4>
-                            <p class="firm">Мир Хобби (Hobby World)</p>
-                        </a>
-                        <button class="addbtn">В корзину</button>
-                        </div>
-                        <div class="catalog-catalog__item stationery">
-                            <a href="#"><div class="catalog-catalog-img">
-                                <img src="../img/catalog/stationery/penal.jpg" alt="#">
-                            </div>
-                            <span>14.14 BYN</span>
-                            <h4 class="prodTitle">Пенал "Cakes"</h4>
-                            <p class="firm">Först</p>
-                        </a>
-                        <button class="addbtn">В корзину</button>
-                        </div>
-                    <div class="catalog-catalog__item fiction">
-                        <a href="#"><div class="catalog-catalog-img">
-                            <img src="../img/catalog/hudoj/mi.jpg" alt="#">
-                        </div>
-                        <span>7.90 BYN</span>
-                        <h4 class="prodTitle">Мы</h4>
-                        <p class="firm">Евгений Замятин</p>
-                    </a>
-                        <button class="addbtn">В корзину</button></div>
-
-                        <div class="catalog-catalog__item non-fiction">
-                            <a href="#"><div class="catalog-catalog-img">
-                                <img src="../img/catalog/nehudoj/pofi.jpg" alt="#">
-                            </div>
-                            <span>18.55 BYN</span>
-                            <h4 class="prodTitle">Дневник пофигиста</h4>
-                            <p class="firm">Марк Мэнсон</p>
-                        </a>
-                        <button class="addbtn">В корзину</button></div>
-
-
-                    <div class="catalog-catalog__item fiction">
-                        <a href="#"><div class="catalog-catalog-img">
-                            <img src="../img/catalog/hudoj/duna.jpg" alt="#">
-                        </div>
-                        <span>25.99 BYN</span>
-                        <h4 class="prodTitle">Дюна</h4>
-                        <p class="firm">Фрэнк Герберт</p>
-                    </a>
-                        <button class="addbtn">В корзину</button></div>
-                        <div class="catalog-catalog__item child">
-                            <a href="#"><div class="catalog-catalog-img">
-                                <img src="../img/catalog/detsk/bob.jpg" alt="#">
-                            </div>
-                            <span>20.29 BYN</span>
-                            <h4 class="prodTitle">Уличный кот по имени Боб</h4>
-                            <p class="firm">Джеймс Боуэн</p>
-                        </a>
-                        <button class="addbtn">В корзину</button></div>
-                        <div class="catalog-catalog__item fiction">
-                            <a href="#"><div class="catalog-catalog-img">
-                                <img src="../img/catalog/hudoj/master.jpg" alt="#">
-                            </div>
-                            <span>8.89 BYN</span>
-                            <h4 class="prodTitle">Мастер и Маргарита</h4>
-                            <p class="firm">Михаил Булгаков</p>
-                    </a>
-                            <button class="addbtn">В корзину</button></div>
-                            
-                            <div class="catalog-catalog__item non-fiction">
-                                <a href="#"><div class="catalog-catalog-img">
-                                    <img src="../img/catalog/nehudoj/maniak.jpg" alt="#">
-                            </div>
-                                <span>17.40 BYN</span>
-                                <h4 class="prodTitle">Безлюдное место. Как ловят маньяков в России</h4>
-                                <p class="firm">Саша Сулим</p>
-                            </a>
-                            <button class="addbtn">В корзину</button></div>
-
-                            <div class="catalog-catalog__item fiction">
-                                <a href="#"><div class="catalog-catalog-img">
-                                    <img src="../img/catalog/hudoj/karta.jpg" alt="#">
-                                </div>
-                                <span>12.62 BYN</span>
-                                <h4 class="prodTitle">Тринадцатая карта</h4>
-                                <p class="firm">Майк Омер</p>
-                            </a>
-                                <button class="addbtn">В корзину</button></div>
-                                <div class="catalog-catalog__item fiction">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/hudoj/king.jpg" alt="#">
-                                    </div>
-                                    <span>18.80 BYN</span>
-                                    <h4 class="prodTitle">Кладбище домашних животных</h4>
-                                    <p class="firm">Стивен Кинг</p>
-                                </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item images">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/images/sympsony.jpg" alt="#">
-                                        </div>
-                                        <span>47.80 BYN</span>
-                                        <h4 class="prodTitle">Картина по номерам "Симпсоны Битлз"</h4>
-                                        <p class="firm">Красиво Красим</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                    </div>
-                                <div class="catalog-catalog__item fiction">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/hudoj/mara.jpg" alt="#">
-                                    </div>
-                                    <span>19.24 BYN</span>
-                                    <h4 class="prodTitle">Мара и Морок</h4>
-                                    <p class="firm">Лия Арден</p>
-                                </a>
-                                    <button class="addbtn">В корзину</button></div>                               
-
-                                <div class="catalog-catalog__item business">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/business/kollegi.jpg" alt="#">
-                                    </div>
-                                    <span>24.13 BYN</span>
-                                    <h4 class="prodTitle">Токсичные коллеги. Как работать с невыносимыми людьми</h4>
-                                    <p class="firm">Тесса Уэст</p>
-                                </a>
-                                <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item non-fiction">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/nehudoj/sverx.jpg" alt="#">
-                                        </div>
-                                        <span>17.40 BYN</span>
-                                        <h4 class="prodTitle">Сверхчувствительная натура</h4>
-                                        <p class="firm">Элейн Эйрон</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    
-                                    <div class="catalog-catalog__item child">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/detsk/prostokv.jpg" alt="#">
-                                    </div>
-                                        <span>18.80 BYN</span>
-                                        <h4 class="prodTitle">Дядя Фёдор. пёс и кот</h4>
-                                        <p class="firm">Эдуард Успенский</p>
-                                </a>
-                                    <button class="addbtn">В корзину</button></div>
-
-
-                                    <div class="catalog-catalog__item non-fiction">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/nehudoj/razum.jpg" alt="#">
-                                    </div>
-                                        <span>22.03 BYN</span>
-                                        <h4 class="prodTitle">Исцеление воспоминанием</h4>
-                                        <p class="firm">Жильбер Рено</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item images">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/images/krasota.jpg" alt="#">
-                                        </div>
-                                        <span>35.25 BYN</span>
-                                        <h4 class="prodTitle">Картина по номерам "Мифология женской красоты. Коварство"</h4>
-                                        <p class="firm">Мир Хобби (Hobby World)</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                    </div>
-                                    <div class="catalog-catalog__item child">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/detsk/coala.jpg" alt="#">
-                                    </div>
-                                        <span>20.67 BYN</span>
-                                        <h4 class="prodTitle">Коала. который смог</h4>
-                                        <p class="firm">Джим Филд</p>
-                                     </a>
-                                     <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item non-fiction">
-                                            <a href="#"><div class="catalog-catalog-img">
-                                                <img src="../img/catalog/nehudoj/iskysstvo.jpg" alt="#">
-                                        </div>
-                                            <span>22.03 BYN</span>
-                                            <h4 class="prodTitle">Искусство XX века. Ключи к пониманию.</h4>
-                                            <p class="firm">Алина Аксенова</p>
-                                    </a>
-                                        <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item fiction">
-                                        <a href="#" ><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/hudoj/gogol.jpg" alt="#">
-                                        </div>
-                                        <span>8.23 BYN</span>
-                                        <h4 class="prodTitle">Мёртвые души</h4>
-                                        <p class="firm">Николай Гоголь</p>
-                                    </a>
-                                        <button class="addbtn">В корзину</button></div>
-
-                                    <div class="catalog-catalog__item child">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/detsk/holi.jpg" alt="#">
-                                        </div>
-                                        <span>12.30 BYN</span>
-                                        <h4 class="prodTitle">Щенок Кнопочка. или Умная малышка</h4>
-                                        <p class="firm">Холли Вебб</p></a>
-                                        <button class="addbtn">В корзину</button></div>
-                                        <div class="catalog-catalog__item images">
-                                            <a href="#"><div class="catalog-catalog-img">
-                                                <img src="../img/catalog/images/cat.jpg" alt="#">
-                                            </div>
-                                            <span>31.37 BYN</span>
-                                            <h4 class="prodTitle">Картина по номерам "Ожидающий волшебства"</h4>
-                                            <p class="firm">LaKarti</p>
-                                        </a>
-                                        <button class="addbtn">В корзину</button>
-                                        </div>
-                                     <div class="catalog-catalog__item child">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/detsk/sysik.jpg" alt="#">
-                                        </div>
-                                        <span>16.38 BYN</span>
-                                        <h4 class="prodTitle">Сыщик на арене</h4>
-                                        <p class="firm">Фрауке Шойнеманн</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item games">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/games/uno.jpg" alt="#">
-                                        </div>
-                                        <span>14.25 BYN</span>
-                                        <h4 class="prodTitle">UNO</h4>
-                                        <p class="firm">Mattel</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                </div>
-                                    <div class="catalog-catalog__item child">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/detsk/poselyi.jpg" alt="#">
-                                        </div>
-                                            <span>44.07 BYN</span>
-                                            <h4 class="prodTitle">Поцелуй в ладошке</h4>
-                                            <p class="firm">Одри Пенн</p>
-                                        </a>
-                                        <button class="addbtn">В корзину</button></div>
-                                        <div class="catalog-catalog__item fiction">
-                                            <a href="#"><div class="catalog-catalog-img">
-                                                <img src="../img/catalog/hudoj/nochi.jpg" alt="#">
-                                            </div>
-                                            <span>22.39 BYN</span>
-                                            <h4 class="prodTitle">Книга Ночи</h4>
-                                            <p class="firm">Холли Блэк</p>
-                                    </a>
-                                        <button class="addbtn">В корзину</button></div>
-                                                                        
-                                    <div class="catalog-catalog__item child">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/detsk/tyman.jpg" alt="#">
-                                        </div>
-                                        <span>25.67 BYN</span>
-                                        <h4 class="prodTitle">Жёлтый туман</h4>
-                                        <p class="firm">Александр Волков</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item business">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/business/lebed.jpg" alt="#">
-                                        </div>
-                                        <span>30.43 BYN</span>
-                                        <h4 class="prodTitle">Черный лебедь. Под знаком непредсказуемости</h4>
-                                        <p class="firm">Нассим Талеб</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item non-fiction">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/nehudoj/gucci.jpg" alt="#">
-                                    </div>
-                                        <span>31.43 BYN</span>
-                                        <h4 class="prodTitle">Gucci. История модного дома</h4>
-                                        <p class="firm">Карен Гомер</p>
-                                </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item child">
-                                            <a href="#"><div class="catalog-catalog-img">
-                                                <img src="../img/catalog/detsk/sestra.jpg" alt="#">
-                                        </div>
-                                            <span>59.17 BYN</span>
-                                            <h4 class="prodTitle">Сестра печали</h4>
-                                            <p class="firm">Вадим Шефнер</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item stationery">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/stationery/markers.jpg" alt="#">
-                                        </div>
-                                        <span>7.89 BYN</span>
-                                        <h4 class="prodTitle">Набор маркеров текстовых "Pomadka" (4 цвета)</h4>
-                                        <p class="firm">MESHU</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                    </div>
-                                    <div class="catalog-catalog__item images">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/images/moun.jpg" alt="#">
-                                        </div>
-                                        <span>25.37 BYN</span>
-                                        <h4 class="prodTitle">Картина по номерам "Гранд-Титон"</h4>
-                                        <p class="firm">Мир Хобби (Hobby World)</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                    </div>
-                                    <div class="catalog-catalog__item business">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/business/dumai.jpg" alt="#">
-                                        </div>
-                                        <span>35.81 BYN</span>
-                                        <h4 class="prodTitle">Думай как миллионер</h4>
-                                        <p class="firm">Т. Экер</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item business">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/business/nutella.jpg" alt="#">
-                                        </div>
-                                        <span>17.09 BYN</span>
-                                        <h4 class="prodTitle">Nutella. Как создать обожаемый бренд</h4>
-                                        <p class="firm">Джиджи Падовани</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item business">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/business/syma.jpg" alt="#">
-                                        </div>
-                                        <span>19.65 BYN</span>
-                                        <h4 class="prodTitle">Как не сойти с ума. Навести порядок в мыслях и чувствах</h4>
-                                        <p class="firm">Филиппа Перр</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item non-fiction">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/nehudoj/korni.jpg" alt="#">
-                                        </div>
-                                        <span>23.70 BYN</span>
-                                        <h4 class="prodTitle">Корни</h4>
-                                        <p class="firm">Алекс Хейли</p>
-                                    </a>
-                                        <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item business">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/business/netfl.jpg" alt="#">
-                                        </div>
-                                        <span>27.32 BYN</span>
-                                        <h4 class="prodTitle">Сильнейшие. Бизнес по правилам Netflix</h4>
-                                        <p class="firm">Патти МакКорд</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                    <div class="catalog-catalog__item stationery">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/stationery/korrektor.jpg" alt="#">
-                                        </div>
-                                        <span>4.04 BYN</span>
-                                        <h4 class="prodTitle">Корректор-роллер "Фрукты" (5 мм; 3 м)</h4>
-                                        <p class="firm">Darvish</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                    </div>
-                                    <div class="catalog-catalog__item business">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/business/cast.jpg" alt="#">
-                                        </div>
-                                        <span>28.76 BYN</span>
-                                        <h4 class="prodTitle">Теория каст и ролей</h4>
-                                        <p class="firm">Алекс Крол</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                </div>
-
-                                    <div class="catalog-catalog__item games">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/games/imaginarium.jpg" alt="#">
-                                        </div>
-                                        <span>68.00 BYN</span>
-                                        <h4 class="prodTitle">Имаджинариум</h4>
-                                        <p class="firm">Cosmodrome Games</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item business">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/business/zara.jpg" alt="#">
-                                    </div>
-                                    <span>17.58 BYN</span>
-                                    <h4 class="prodTitle">Феномен ZARA</h4>
-                                    <p class="firm">Ковадонга О`Ши</p>
-                                </a>
-                                <button class="addbtn">В корзину</button></div>
-                                <div class="catalog-catalog__item games">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/games/mem.jpg" alt="#">
-                                    </div>
-                                    <span>41.00 BYN</span>
-                                    <h4 class="prodTitle">Что за мем?</h4>
-                                    <p class="firm">Pufpuf</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                            </div>
-                                        <div class="catalog-catalog__item games">
-                                            <a href="#"><div class="catalog-catalog-img">
-                                                <img src="../img/catalog/games/50.jpg" alt="#">
-                                            </div>
-                                            <span>73.47 BYN</span>
-                                            <h4 class="prodTitle">500 злобных карт 3.0</h4>
-                                            <p class="firm">Cosmodrome Games</p>
-                                        </a>
-                                        <button class="addbtn">В корзину</button>
-                                    </div>
-                                    <div class="catalog-catalog__item stationery">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/stationery/notebook.jpg" alt="#">
-                                        </div>
-                                        <span>2.27 BYN</span>
-                                        <h4 class="prodTitle">Тетрадь полуобщая в клетку "Wild Flowers" (48 листов)</h4>
-                                        <p class="firm">Greenwich Line</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                    </div>
-                                    <div class="catalog-catalog__item games">
-                                        <a href="#"><div class="catalog-catalog-img">
-                                            <img src="../img/catalog/games/korolevy.jpg" alt="#">
-                                        </div>
-                                        <span>29.00 BYN</span>
-                                        <h4 class="prodTitle">Спящие королевы</h4>
-                                        <p class="firm">Gamewright</p>
-                                    </a>
-                                    <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item images">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/images/dog.jpg" alt="#">
-                                    </div>
-                                    <span>31.37 BYN</span>
-                                    <h4 class="prodTitle">Картина по номерам "Верный друг"</h4>
-                                    <p class="firm">Мир Хобби (Hobby World)</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item non-fiction">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/nehudoj/48.jpg" alt="#">
-                                    </div>
-                                    <span>28.74 BYN</span>
-                                    <h4 class="prodTitle">48 законов власти</h4>
-                                    <p class="firm">Роберт Грин</p>
-                                </a>
-                                    <button class="addbtn">В корзину</button></div>
-                                <div class="catalog-catalog__item images">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/images/bike.jpg" alt="#">
-                                    </div>
-                                    <span>44.73 BYN</span>
-                                    <h4 class="prodTitle">Картина по номерам "Скорость"</h4>
-                                    <p class="firm">LaKarti</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item images">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/images/pions.jpg" alt="#">
-                                    </div>
-                                    <span>33.58 BYN</span>
-                                    <h4 class="prodTitle">Картина по номерам "Поздние пионы"</h4>
-                                    <p class="firm">OZ</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item stationery">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/stationery/notebook2.jpg" alt="#">
-                                    </div>
-                                    <span>2.20 BYN</span>
-                                    <h4 class="prodTitle">Тетрадь общая в клетку "Невероятный мир" (80 листов)</h4>
-                                    <p class="firm">B</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item stationery">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/stationery/pen.jpg" alt="#">
-                                    </div>
-                                    <span>7.16 BYN</span>
-                                    <h4 class="prodTitle">Ручка шариковая синяя "Cute Dinosaur" (0.7 мм)</h4>
-                                    <p class="firm">MESHU</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item stationery">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/stationery/lastyk.jpg" alt="#">
-                                    </div>
-                                    <span>2.03 BYN</span>
-                                    <h4 class="prodTitle">Ластик "Pastel"</h4>
-                                    <p class="firm">Berlingo</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item games">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/games/koty.jpg" alt="#">
-                                    </div>
-                                    <span>29.00 BYN</span>
-                                    <h4 class="prodTitle">Взрывные котята (18+)</h4>
-                                    <p class="firm">Мир Хобби (Hobby World)</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                                </div>
-                                <div class="catalog-catalog__item stationery">
-                                    <a href="#"><div class="catalog-catalog-img">
-                                        <img src="../img/catalog/stationery/penal2.jpg" alt="#">
-                                    </div>
-                                    <span>19.56 BYN</span>
-                                    <h4 class="prodTitle">Пенал "Duck day"</h4>
-                                    <p class="firm">Först</p>
-                                </a>
-                                <button class="addbtn">В корзину</button>
-                                </div>
-                                                                        
-                    </div>
-                </div>
+      <div class="container">
+        <h3>Каталог</h3>
+        <div class="catalog-main-wrap">
+          <div class="catalog-filter">
+            <div class="catalog-filter-wrap">
+              <ul class="list">
+                <li class="list__item active" data-id="all" active>
+                  Все товары
+                </li>
+                <li class="list__item" data-id="fiction">
+                  Художественная литература
+                </li>
+                <li class="list__item" data-id="non-fiction">
+                  Нехудожественная литература
+                </li>
+                <li class="list__item" data-id="child">Детские книги</li>
+                <li class="list__item" data-id="business">Бизнес-литература</li>
+                <li class="list__item" data-id="images">Картины по номерам</li>
+                <li class="list__item" data-id="games">Настольные игры</li>
+                <li class="list__item" data-id="stationery">
+                  Канцелярские принадлежности
+                </li>
+              </ul>
             </div>
-        </div>
-</section>
-    
-    <footer class="footer">
-        <div class="container">
-                <div class="footer-wrap">
-                    <div class="footer-wrap-up">
-                        <div class="logo-main">
-                            <div class="logo"><a href="../index.html"><img src="../img/books-stack-of-three 2_1.svg" alt="#"></a></div>
-                            <div class="logo-text">
-                                <a href="../index.html"><span class="logo-one">Библиотечная</span></a>
-                                <a href="../index.html"></a><span class="logo-two">Книжный магазин</span></a>
-                            </div>
-                        </div>
-                        <div class="nav-wrap">
-                            <nav>
-                                <ul>
-                                    <h3>Популярное</h3>
-                                    <li><a href="#">Программирование</a></li>
-                                    <li><a href="#">Книги для детей</a></li>
-                                    <li><a href="#">Психология</a></li>
-                                    <li><a href="#">Бизнес</a></li>
-                                </ul>
-                                <ul>
-                                    <h3>Информация</h3>
-                                    <li><a href="#">Доставка</a></li>
-                                    <li><a href="#">Оплата</a></li>
-                                    <li><a href="../html/o_nas.html">О магазине</a></li>
-                                </ul>
-                                <ul>
-                                    <h3>Помощь</h3>
-                                    <li><a href="#">Контакты</a></li>
-                                    <li><a href="#">Возврат товара</a></li>
-                                    <li><a href="#">Помощь покупателю</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="foofer-call">
-                            <p class="firm">+375 (29) 339-16-26</p>
-                            <div class="footer-btn"><a href="#">Заказать звонок</a></div>
-                        </div>
+          </div>
+          <div class="catalog-catalog">
+            <div class="catalog-catalog-wrap">
+              <div class="catalog-catalog__item images">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/images/gora.jpg" alt="#" />
+                  </div>
+                  <span>31.37 BYN</span>
+                  <h4 class="prodTitle">Картина по номерам "Вид на Юпитер"</h4>
+                  <p class="firm">Мир Хобби (Hobby World)</p>
+                </a>
+                  <div class="btn-mark">
+                    <button class="addbtn">В корзину</button>
+                    <div class="mark">
+                      <img src="../img/rate-full.svg" alt="#" />
+                      <p class="mark-item">5 <span>(18)</span></p>
                     </div>
-                    <div class="footer-wrap-down">
-                        <p class="firm">Все права защищены © 2003-2023</p>
-                    </div>
+                  </div>
+              </div>
+              <div class="catalog-catalog__item stationery">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/stationery/penal.jpg" alt="#" />
+                  </div>
+                  <span>14.14 BYN</span>
+                  <h4 class="prodTitle">Пенал "Cakes"</h4>
+                  <p class="firm">Först</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">4 <span>(12)</span></p>
+                  </div>
                 </div>
+              </div>
+              <div class="catalog-catalog__item fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/hudoj/mi.jpg" alt="#" />
+                  </div>
+                  <span>7.90 BYN</span>
+                  <h4 class="prodTitle">Мы</h4>
+                  <p class="firm">Евгений Замятин</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(53)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item non-fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/nehudoj/pofi.jpg" alt="#" />
+                  </div>
+                  <span>18.55 BYN</span>
+                  <h4 class="prodTitle">Дневник пофигиста</h4>
+                  <p class="firm">Марк Мэнсон</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/hudoj/duna.jpg" alt="#" />
+                  </div>
+                  <span>25.99 BYN</span>
+                  <h4 class="prodTitle">Дюна</h4>
+                  <p class="firm">Фрэнк Герберт</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">3 <span>(17)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item child">
+                <a href="#">
+                    <div class="catalog-catalog-img">
+                    <img src="../img/catalog/detsk/bob.jpg" alt="#" />
+                  </div>
+                  <span>20.29 BYN</span>
+                  <h4 class="prodTitle">Уличный кот по имени Боб</h4>
+                  <p class="firm">Джеймс Боуэн</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(26)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/hudoj/master.jpg" alt="#" />
+                  </div>
+                  <span>8.89 BYN</span>
+                  <h4 class="prodTitle">Мастер и Маргарита</h4>
+                  <p class="firm">Михаил Булгаков</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(14)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item non-fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/nehudoj/maniak.jpg" alt="#" />
+                  </div>
+                  <span>17.40 BYN</span>
+                  <h4 class="prodTitle">
+                    Безлюдное место. Как ловят маньяков в России
+                  </h4>
+                  <p class="firm">Саша Сулим</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(114)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/hudoj/karta.jpg" alt="#" />
+                  </div>
+                  <span>12.62 BYN</span>
+                  <h4 class="prodTitle">Тринадцатая карта</h4>
+                  <p class="firm">Майк Омер</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">4 <span>(1)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/hudoj/king.jpg" alt="#" />
+                  </div>
+                  <span>18.80 BYN</span>
+                  <h4 class="prodTitle">Кладбище домашних животных</h4>
+                  <p class="firm">Стивен Кинг</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">4 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item images">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/images/sympsony.jpg" alt="#" />
+                  </div>
+                  <span>47.80 BYN</span>
+                  <h4 class="prodTitle">Картина по номерам "Симпсоны Битлз"</h4>
+                  <p class="firm">Красиво Красим</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">4 <span>(13)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/hudoj/mara.jpg" alt="#" />
+                  </div>
+                  <span>19.24 BYN</span>
+                  <h4 class="prodTitle">Мара и Морок</h4>
+                  <p class="firm">Лия Арден</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item business">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/business/kollegi.jpg" alt="#" />
+                  </div>
+                  <span>24.13 BYN</span>
+                  <h4 class="prodTitle">
+                    Токсичные коллеги. Как работать с невыносимыми людьми
+                  </h4>
+                  <p class="firm">Тесса Уэст</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item non-fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/nehudoj/sverx.jpg" alt="#" />
+                  </div>
+                  <span>17.40 BYN</span>
+                  <h4 class="prodTitle">Сверхчувствительная натура</h4>
+                  <p class="firm">Элейн Эйрон</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item child">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/detsk/prostokv.jpg" alt="#" />
+                  </div>
+                  <span>18.80 BYN</span>
+                  <h4 class="prodTitle">Дядя Фёдор. пёс и кот</h4>
+                  <p class="firm">Эдуард Успенский</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item non-fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/nehudoj/razum.jpg" alt="#" />
+                  </div>
+                  <span>22.03 BYN</span>
+                  <h4 class="prodTitle">Исцеление воспоминанием</h4>
+                  <p class="firm">Жильбер Рено</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item images">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/images/krasota.jpg" alt="#" />
+                  </div>
+                  <span>35.25 BYN</span>
+                  <h4 class="prodTitle">
+                    Картина по номерам "Мифология женской красоты. Коварство"
+                  </h4>
+                  <p class="firm">Мир Хобби (Hobby World)</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item child">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/detsk/coala.jpg" alt="#" />
+                  </div>
+                  <span>20.67 BYN</span>
+                  <h4 class="prodTitle">Коала. который смог</h4>
+                  <p class="firm">Джим Филд</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item non-fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/nehudoj/iskysstvo.jpg" alt="#" />
+                  </div>
+                  <span>22.03 BYN</span>
+                  <h4 class="prodTitle">
+                    Искусство XX века. Ключи к пониманию.
+                  </h4>
+                  <p class="firm">Алина Аксенова</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/hudoj/gogol.jpg" alt="#" />
+                  </div>
+                  <span>8.23 BYN</span>
+                  <h4 class="prodTitle">Мёртвые души</h4>
+                  <p class="firm">Николай Гоголь</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item child">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/detsk/holi.jpg" alt="#" />
+                  </div>
+                  <span>12.30 BYN</span>
+                  <h4 class="prodTitle">Щенок Кнопочка. или Умная малышка</h4>
+                  <p class="firm">Холли Вебб</p></a
+                >
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item images">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/images/cat.jpg" alt="#" />
+                  </div>
+                  <span>31.37 BYN</span>
+                  <h4 class="prodTitle">
+                    Картина по номерам "Ожидающий волшебства"
+                  </h4>
+                  <p class="firm">LaKarti</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item child">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/detsk/sysik.jpg" alt="#" />
+                  </div>
+                  <span>16.38 BYN</span>
+                  <h4 class="prodTitle">Сыщик на арене</h4>
+                  <p class="firm">Фрауке Шойнеманн</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item games">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/games/uno.jpg" alt="#" />
+                  </div>
+                  <span>14.25 BYN</span>
+                  <h4 class="prodTitle">UNO</h4>
+                  <p class="firm">Mattel</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item child">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/detsk/poselyi.jpg" alt="#" />
+                  </div>
+                  <span>44.07 BYN</span>
+                  <h4 class="prodTitle">Поцелуй в ладошке</h4>
+                  <p class="firm">Одри Пенн</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/hudoj/nochi.jpg" alt="#" />
+                  </div>
+                  <span>22.39 BYN</span>
+                  <h4 class="prodTitle">Книга Ночи</h4>
+                  <p class="firm">Холли Блэк</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item child">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/detsk/tyman.jpg" alt="#" />
+                  </div>
+                  <span>25.67 BYN</span>
+                  <h4 class="prodTitle">Жёлтый туман</h4>
+                  <p class="firm">Александр Волков</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item business">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/business/lebed.jpg" alt="#" />
+                  </div>
+                  <span>30.43 BYN</span>
+                  <h4 class="prodTitle">
+                    Черный лебедь. Под знаком непредсказуемости
+                  </h4>
+                  <p class="firm">Нассим Талеб</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item non-fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/nehudoj/gucci.jpg" alt="#" />
+                  </div>
+                  <span>31.43 BYN</span>
+                  <h4 class="prodTitle">Gucci. История модного дома</h4>
+                  <p class="firm">Карен Гомер</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item child">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/detsk/sestra.jpg" alt="#" />
+                  </div>
+                  <span>59.17 BYN</span>
+                  <h4 class="prodTitle">Сестра печали</h4>
+                  <p class="firm">Вадим Шефнер</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item stationery">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/stationery/markers.jpg" alt="#" />
+                  </div>
+                  <span>7.89 BYN</span>
+                  <h4 class="prodTitle">
+                    Набор маркеров текстовых "Pomadka" (4 цвета)
+                  </h4>
+                  <p class="firm">MESHU</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item images">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/images/moun.jpg" alt="#" />
+                  </div>
+                  <span>25.37 BYN</span>
+                  <h4 class="prodTitle">Картина по номерам "Гранд-Титон"</h4>
+                  <p class="firm">Мир Хобби (Hobby World)</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item business">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/business/dumai.jpg" alt="#" />
+                  </div>
+                  <span>35.81 BYN</span>
+                  <h4 class="prodTitle">Думай как миллионер</h4>
+                  <p class="firm">Т. Экер</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item business">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/business/nutella.jpg" alt="#" />
+                  </div>
+                  <span>17.09 BYN</span>
+                  <h4 class="prodTitle">
+                    Nutella. Как создать обожаемый бренд
+                  </h4>
+                  <p class="firm">Джиджи Падовани</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item business">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/business/syma.jpg" alt="#" />
+                  </div>
+                  <span>19.65 BYN</span>
+                  <h4 class="prodTitle">
+                    Как не сойти с ума. Навести порядок в мыслях и чувствах
+                  </h4>
+                  <p class="firm">Филиппа Перр</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item non-fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/nehudoj/korni.jpg" alt="#" />
+                  </div>
+                  <span>23.70 BYN</span>
+                  <h4 class="prodTitle">Корни</h4>
+                  <p class="firm">Алекс Хейли</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item business">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/business/netfl.jpg" alt="#" />
+                  </div>
+                  <span>27.32 BYN</span>
+                  <h4 class="prodTitle">
+                    Сильнейшие. Бизнес по правилам Netflix
+                  </h4>
+                  <p class="firm">Патти МакКорд</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item stationery">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img
+                      src="../img/catalog/stationery/korrektor.jpg"
+                      alt="#"
+                    />
+                  </div>
+                  <span>4.04 BYN</span>
+                  <h4 class="prodTitle">
+                    Корректор-роллер "Фрукты" (5 мм; 3 м)
+                  </h4>
+                  <p class="firm">Darvish</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item business">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/business/cast.jpg" alt="#" />
+                  </div>
+                  <span>28.76 BYN</span>
+                  <h4 class="prodTitle">Теория каст и ролей</h4>
+                  <p class="firm">Алекс Крол</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-catalog__item games">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/games/imaginarium.jpg" alt="#" />
+                  </div>
+                  <span>68.00 BYN</span>
+                  <h4 class="prodTitle">Имаджинариум</h4>
+                  <p class="firm">Cosmodrome Games</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item business">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/business/zara.jpg" alt="#" />
+                  </div>
+                  <span>17.58 BYN</span>
+                  <h4 class="prodTitle">Феномен ZARA</h4>
+                  <p class="firm">Ковадонга О`Ши</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item games">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/games/mem.jpg" alt="#" />
+                  </div>
+                  <span>41.00 BYN</span>
+                  <h4 class="prodTitle">Что за мем?</h4>
+                  <p class="firm">Pufpuf</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item games">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/games/50.jpg" alt="#" />
+                  </div>
+                  <span>73.47 BYN</span>
+                  <h4 class="prodTitle">500 злобных карт 3.0</h4>
+                  <p class="firm">Cosmodrome Games</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item stationery">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/stationery/notebook.jpg" alt="#" />
+                  </div>
+                  <span>2.27 BYN</span>
+                  <h4 class="prodTitle">
+                    Тетрадь полуобщая в клетку "Wild Flowers" (48 листов)
+                  </h4>
+                  <p class="firm">Greenwich Line</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item games">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/games/korolevy.jpg" alt="#" />
+                  </div>
+                  <span>29.00 BYN</span>
+                  <h4 class="prodTitle">Спящие королевы</h4>
+                  <p class="firm">Gamewright</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item images">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/images/dog.jpg" alt="#" />
+                  </div>
+                  <span>31.37 BYN</span>
+                  <h4 class="prodTitle">Картина по номерам "Верный друг"</h4>
+                  <p class="firm">Мир Хобби (Hobby World)</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item non-fiction">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/nehudoj/48.jpg" alt="#" />
+                  </div>
+                  <span>28.74 BYN</span>
+                  <h4 class="prodTitle">48 законов власти</h4>
+                  <p class="firm">Роберт Грин</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item images">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/images/bike.jpg" alt="#" />
+                  </div>
+                  <span>44.73 BYN</span>
+                  <h4 class="prodTitle">Картина по номерам "Скорость"</h4>
+                  <p class="firm">LaKarti</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item images">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/images/pions.jpg" alt="#" />
+                  </div>
+                  <span>33.58 BYN</span>
+                  <h4 class="prodTitle">Картина по номерам "Поздние пионы"</h4>
+                  <p class="firm">OZ</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item stationery">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img
+                      src="../img/catalog/stationery/notebook2.jpg"
+                      alt="#"
+                    />
+                  </div>
+                  <span>2.20 BYN</span>
+                  <h4 class="prodTitle">
+                    Тетрадь общая в клетку "Невероятный мир" (80 листов)
+                  </h4>
+                  <p class="firm">B</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item stationery">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/stationery/pen.jpg" alt="#" />
+                  </div>
+                  <span>7.16 BYN</span>
+                  <h4 class="prodTitle">
+                    Ручка шариковая синяя "Cute Dinosaur" (0.7 мм)
+                  </h4>
+                  <p class="firm">MESHU</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item stationery">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/stationery/lastyk.jpg" alt="#" />
+                  </div>
+                  <span>2.03 BYN</span>
+                  <h4 class="prodTitle">Ластик "Pastel"</h4>
+                  <p class="firm">Berlingo</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item games">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/games/koty.jpg" alt="#" />
+                  </div>
+                  <span>29.00 BYN</span>
+                  <h4 class="prodTitle">Взрывные котята (18+)</h4>
+                  <p class="firm">Мир Хобби (Hobby World)</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(18)</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-catalog__item stationery">
+                <a href="#"
+                  ><div class="catalog-catalog-img">
+                    <img src="../img/catalog/stationery/penal2.jpg" alt="#" />
+                  </div>
+                  <span>19.56 BYN</span>
+                  <h4 class="prodTitle">Пенал "Duck day"</h4>
+                  <p class="firm">Först</p>
+                </a>
+                <div class="btn-mark">
+                  <button class="addbtn">В корзину</button>
+                  <div class="mark">
+                    <img src="../img/rate-full.svg" alt="#" />
+                    <p class="mark-item">5 <span>(19)</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-wrap-up">
+            <div class="logo-main">
+              <div class="logo">
+                <a href="../index.html"
+                  ><img src="../img/books-stack-of-three 2_1.svg" alt="#"
+                /></a>
+              </div>
+              <div class="logo-text">
+                <a href="../index.html"
+                  ><span class="logo-one">Библиотечная</span></a
+                >
+                <a href="../index.html"
+                  ><span class="logo-two">Книжный магазин</span></a
+                >
+              </div>
+            </div>
+            <div class="nav-wrap">
+              <nav>
+                <ul>
+                  <h3>Популярное</h3>
+                  <li><a href="#">Программирование</a></li>
+                  <li><a href="#">Книги для детей</a></li>
+                  <li><a href="#">Психология</a></li>
+                  <li><a href="#">Бизнес</a></li>
+                </ul>
+                <ul>
+                  <h3>Информация</h3>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Оплата</a></li>
+                  <li><a href="../html/o_nas.html">О магазине</a></li>
+                </ul>
+                <ul>
+                  <h3>Помощь</h3>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Возврат товара</a></li>
+                  <li><a href="#">Помощь покупателю</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="foofer-call">
+              <p class="firm">+375 (29) 339-16-26</p>
+              <div class="footer-btn"><a href="#">Заказать звонок</a></div>
+            </div>
+          </div>
+          <div class="footer-wrap-down">
+            <p class="firm">Все права защищены © 2003-2023</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="../js/filter.js"></script>
     <script type="module" src="../js/cart.js"></script>
-</body>
+  </body>
 </html>

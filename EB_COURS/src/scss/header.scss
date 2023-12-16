@@ -63,13 +63,19 @@
     display: flex;
     width: 375px;
     justify-content: space-between;
-  }
-  a {
-    color: #241400;
-    font-size: 18px;
-    transition: 0.3s;
-    &:hover {
-      color: #E16A00;
+    align-items: center;
+    li {
+      width: 125px;
+      a {
+        color: #241400;
+        font-size: 18px;
+        transition: 0.4s;
+        padding: 5px;
+        font-weight: 600;
+        &:hover {
+          color: #e16a00;
+        }
+      }
     }
   }
 }

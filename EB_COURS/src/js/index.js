@@ -1,6 +1,6 @@
 new Swiper(".mySwiper", {
   slidesPerView: 5,
-  spaceBetween: 62,
+  spaceBetween: 45,
   freeMode: true,
 
   navigation: {

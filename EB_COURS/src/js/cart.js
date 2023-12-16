@@ -25,7 +25,9 @@ function addToCart(event) {
           img: productImg, // Добавляем URL изображения
       };
 
+
       cart.push(product);
+
 
       localStorage.setItem("cart", JSON.stringify(cart));
       displayCart();
@@ -142,7 +144,6 @@ function displayCart() {
         
                 // Пересчитываем totalAmount после удаления товара
                 totalAmount -= parseFloat(item.price);
-        
                 displayCart();
             }
         });

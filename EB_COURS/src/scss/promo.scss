@@ -27,6 +27,7 @@
 
 .button {
   width: 212px;
+  border-radius: 8px;
   padding: 11px 24px;
   background: #e16a00;
   margin-top: 16px;
@@ -37,6 +38,10 @@
   font-style: normal;
   font-weight: 900;
   line-height: 196.187%;
+  transition: 0.5s;
+  &:hover{
+    box-shadow: 0px 0px 10px 0px rgb(36, 20, 0);
+  }
 }
 .promo-right {
   width: 650px;
